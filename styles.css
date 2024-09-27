@@ -66,14 +66,20 @@ a {
     padding-left: 20px;
     width: 400px;
     letter-spacing: 1px;
-    
-    
 }
 
 #container_wrap {
     display: flex;
     justify-content: center;
     gap: 60px;  
+}
+
+.question {
+    color:rgb(252, 232, 200);
+}
+
+main blockquote {
+    color:rgb(244, 209, 154);
 }
 
 footer {
