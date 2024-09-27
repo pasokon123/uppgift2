@@ -64,7 +64,7 @@ a {
     background-color: rgb(0, 0, 0, 0.6);
     border-radius: 12px;
     padding-left: 20px;
-    width: 500px;
+    width: 400px;
     letter-spacing: 1px;
     
     
@@ -73,7 +73,7 @@ a {
 #container_wrap {
     display: flex;
     justify-content: center;
-    gap: 80px;  
+    gap: 60px;  
 }
 
 footer {
