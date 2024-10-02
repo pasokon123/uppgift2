@@ -82,6 +82,11 @@ main blockquote {
     color:rgb(244, 209, 154);
 }
 
+#apple {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     display: flex;
     margin-top: auto;
