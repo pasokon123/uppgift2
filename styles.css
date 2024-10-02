@@ -111,17 +111,21 @@ footer {
         border-radius: 12px;
         border: solid white 1px;
     }
+
     header ul {
         margin-left: 0;
     }
+
     header {
         justify-content: center;
         gap: 16px;
         height: 7em;
     }
+
     header p {
         margin: 0;
     }
+
     body {
         height: 120vh;
     }
@@ -134,7 +138,27 @@ footer {
         height: 8em;
     }
     body {
-        height: 150vh;
+        height: 140vh;
+    }
+    #container_wrap {
+        gap: 16px;
     }
 }
 
+@media screen and (max-width: 400px) {
+    body {
+        height: 150vh;
+    }
+    .container {
+        flex: 0 0 340px;
+        letter-spacing: 0;
+    }
+    #container_wrap {
+        gap: 10px;
+    }
+    header li {
+        margin: 2px;
+    }
+   
+
+}
