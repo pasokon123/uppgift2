@@ -4,6 +4,7 @@ html {
 }
 
 header {
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,14 +25,21 @@ body {
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto min-content auto auto;
+    grid-template-rows: min-content min-content min-content auto min-content ;
+    grid-template-areas:
+        "      header header header header header      "
+        "      .       .      h1      .        .   "
+        "       wrapper  wrapper wrapper wrapper wrapper  "
+        "      .        .     .   .      .      "
+        "     footer footer  footer footer  footer  ";
+    height: 110vh;
 }
 
-main h1 {
-    display: flex;
-    justify-content: center;
+h1 {
+    grid-area: h1;
+    text-wrap: nowrap;
     color: rgb(250, 238, 223);
 }
 
@@ -67,6 +75,7 @@ a {
 }
 
 #container_wrap {
+    grid-area: wrapper;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -77,7 +86,7 @@ a {
     color: rgb(252, 232, 200);
 }
 
-main blockquote {
+blockquote {
     color: rgb(244, 209, 154);
 
 }
@@ -88,6 +97,7 @@ main blockquote {
 }
 
 footer {
+    grid-area: footer;
     display: flex;
     margin-top: auto;
     justify-content: center;
@@ -159,6 +169,6 @@ footer {
     header li {
         margin: 2px;
     }
-   
+
 
 }
