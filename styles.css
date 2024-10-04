@@ -27,7 +27,7 @@ body {
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: auto auto min-content auto auto;
-    grid-template-rows: min-content min-content min-content auto min-content ;
+    grid-template-rows: min-content min-content min-content auto 150px;
     grid-template-areas:
         "      header header header header header      "
         "      .       .      h1      .        .   "
@@ -106,3 +106,61 @@ footer {
 }
 
 /** Media queries **/
+@media screen and (max-width: 580px) {
+    body {
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content auto 150px;
+        grid-template-areas:
+            "  header  "
+            "  h1      "
+            "  wrapper "
+            "    .     "
+            "  footer  ";
+        height: 150vh;
+    }
+    header li {
+        font-size: 1.7em;
+        padding: 4px;
+        border-radius: 12px;
+        border: solid rgb(255, 230, 185) 1px;
+    }
+    header ul {
+        margin-left: 0;
+    }
+    header {
+        justify-content: center;
+        gap: 16px;
+        height: 7em;
+        flex-wrap: wrap;
+        gap: 0;
+        height: 8em;
+    }
+    header p {
+        margin: 0;
+    }
+    body {
+        height: 120vh;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        flex: 0 0 330px;
+        letter-spacing: 0;
+    }
+    #container_wrap {
+        gap: 30px;
+    }
+    header li {
+        margin: 0;
+    }
+    footer {
+        margin-top: 150px;
+    }
+}
