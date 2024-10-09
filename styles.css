@@ -47,7 +47,6 @@ header ul {
     list-style: none;
     margin-left: 32px;
     padding: 0;
-
 }
 
 header li {
@@ -65,10 +64,11 @@ a {
 }
 
 a:hover {
-    text-shadow: 1px 1px 2px black,
-    0 0 0.7em orange,
-    0 0 1em orange;
-    color:white;
+    text-shadow:
+        1px 1px 2px black,
+        0 0 0.7em orange,
+        0 0 1em orange;
+    color: white;
 }
 
 .container {
@@ -115,11 +115,11 @@ footer {
 }
 
 /** Media queries **/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     body {
         place-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: min-content min-content auto 150px;
+        grid-template-rows: min-content min-content auto auto 150px;
         grid-template-areas:
             "  header  "
             "  h1      "
@@ -128,30 +128,38 @@ footer {
             "  footer  ";
         height: 120vh;
     }
-    .container:hover {
-        transform: none;
-    }
-    header li {
-        font-size: 1.7em;
-        padding: 4px;
-        border-radius: 12px;
-        border: solid rgb(255, 230, 185) 1px;
-    }
+
     header ul {
-        margin-left: 0;
+        margin-left: 40px;
+        margin-right: 40px;
     }
-    header {
-        justify-content: center;
-        gap: 16px;
-        height: 7em;
-        flex-wrap: wrap;
-        gap: 0;
-        height: 8em;
+
+    h1 {
+        text-align: center;
+        text-wrap: wrap;
     }
-    header p {
-        margin: 0;
-    }
+
+header li {
+    font-size: 1.7em;
+    padding: 4px;
+    border-radius: 12px;
+    border: solid rgb(255, 230, 185) 1px;
 }
+
+header {
+    justify-content: center;
+    gap: 16px;
+    height: 7em;
+    flex-wrap: wrap;
+    gap: 0;
+    height: 8em;
+}
+
+header p {
+    margin: 0;
+}
+}
+
 
 
 @media screen and (max-width: 420px) {
@@ -159,16 +167,20 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
     .container {
         flex: 0 0 330px;
         letter-spacing: 0;
     }
+
     #container_wrap {
         gap: 30px;
     }
+
     header li {
         margin: 0;
     }
+
     footer {
         margin-top: 150px;
     }
@@ -178,12 +190,15 @@ footer {
     html {
         font-size: 14px;
     }
+
     body {
         height: 110vh;
     }
+
     .container {
         flex: 0 0 300px;
     }
+
     footer {
         margin-top: 100px;
     }
