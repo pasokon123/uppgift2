@@ -169,4 +169,13 @@ footer {
     html {
         font-size: 14px;
     }
+    body {
+        height: 110vh;
+    }
+    .container {
+        flex: 0 0 300px;
+    }
+    footer {
+        margin-top: 100px;
+    }
 }
