@@ -34,7 +34,7 @@ body {
         "       wrapper  wrapper wrapper wrapper wrapper  "
         "      .        .     .   .      .      "
         "     footer footer  footer footer  footer  ";
-    height: 110vh;
+    height: 100vh;
 }
 
 h1 {
@@ -126,7 +126,7 @@ footer {
             "  wrapper "
             "    .     "
             "  footer  ";
-        height: 120vh;
+        height: 110vh;
     }
 
     header ul {
@@ -139,25 +139,25 @@ footer {
         text-wrap: wrap;
     }
 
-header li {
-    font-size: 1.7em;
-    padding: 4px;
-    border-radius: 12px;
-    border: solid rgb(255, 230, 185) 1px;
-}
+    header li {
+        font-size: 1.7em;
+        padding: 4px;
+        border-radius: 12px;
+        border: solid rgb(255, 230, 185) 1px;
+    }
 
-header {
-    justify-content: center;
-    gap: 16px;
-    height: 7em;
-    flex-wrap: wrap;
-    gap: 0;
-    height: 8em;
-}
+    header {
+        justify-content: center;
+        gap: 16px;
+        height: 7em;
+        flex-wrap: wrap;
+        gap: 0;
+        height: 8em;
+    }
 
-header p {
-    margin: 0;
-}
+    header p {
+        margin: 0;
+    }
 }
 
 
@@ -168,6 +168,14 @@ header p {
         flex-direction: column;
     }
 
+    header ul {
+        margin: 0;
+    }
+
+    header li {
+        margin: 0;
+    }
+
     .container {
         flex: 0 0 330px;
         letter-spacing: 0;
@@ -176,30 +184,15 @@ header p {
     #container_wrap {
         gap: 30px;
     }
-
-    header li {
-        margin: 0;
-    }
-
-    footer {
-        margin-top: 150px;
-    }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 355px) {
     html {
         font-size: 14px;
-    }
-
-    body {
-        height: 110vh;
     }
 
     .container {
         flex: 0 0 300px;
     }
 
-    footer {
-        margin-top: 100px;
-    }
 }
