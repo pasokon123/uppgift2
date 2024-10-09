@@ -81,6 +81,11 @@ a:hover {
     padding-left: 20px;
     width: 400px;
     letter-spacing: 1px;
+    transition: all 0.1s;
+}
+
+.container:hover {
+    transform: scale(1.1);
 }
 
 #container_wrap {
