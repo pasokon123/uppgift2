@@ -81,6 +81,11 @@ a:hover {
     padding-left: 20px;
     width: 400px;
     letter-spacing: 1px;
+    transition: all 0.1s
+}
+
+.container:hover {
+    transform: scale(1.1)
 }
 
 #container_wrap {
@@ -162,10 +167,11 @@ footer {
 
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     body {
         display: flex;
         flex-direction: column;
+        height: 150vh;
     }
 
     header ul {
