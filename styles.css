@@ -164,3 +164,9 @@ footer {
         margin-top: 150px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 14px;
+    }
+}
